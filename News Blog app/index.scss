@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    list-style: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.top-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.banner {
+    height: 100px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-navigation {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    gap: 30px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    height: 4em;
+
+    ul {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .search {
+        margin-right: 10px;
+    }
+
+}
+
+
+
+.latest-stories {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 90%;
+    height: 50vh;
+    gap: 5px;
+
+    .latest-stories-smalls {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 5px;
+    }
+
+    &--small, &--big {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        
+        .article-header {
+            margin: auto;
+        }
+        .article-description {
+            justify-self: flex-end;
+            margin: auto;
+            text-align: center;
+        }
+    }
+    &--small {
+        .article-description {
+            font-size: 0.8em;
+        }
+    }
+}
+
+.trending-news{
+    width: 90%;
+    border: 1px solid black;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        border-bottom: 1px solid black;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+
+            li {
+                padding: 1.5em 0;
+            }
+            .selected {
+                border-bottom: 4px solid black;
+            }
+        }
+    }
+
+    .trending-articles {
+        display: grid;
+        grid-template-columns: 30% 70%;
+
+        &--preview {
+            
+            &--smalls {
+                margin: 20px 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                gap: 30px;
+
+                .selected {
+                    border: 1px solid black;
+                }
+            }
+
+            &--small {
+                width: 25vw;
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                gap: 10px;
+                img {
+                    height: 70px;
+                    width: 90px;
+                    background-color: black;
+                }
+                h1 {
+                    font-size: 1em;
+                }
+            }
+
+            &--big {
+                margin: 20px 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                img {
+                    background: black;
+                    height: 30vh;
+                    width: 100%;
+                }
+
+                .read-more {
+                    background-color: black;
+                    color: white;
+                    display: inline-block;
+                    padding: 10px 20px;
+                }
+
+                p {
+                    line-height: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+
+
+.recommended-articles{
+    width: 90%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .container {
+        display: grid;
+        height: 50vh;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 5px;
+
+        .article {
+            width: auto;
+            background: black;
+            color: white;
+            display: flex;
+            align-items: flex-end;
+
+            h1 {
+                margin: 20px;
+            }
+        }
+    }
+
+    &--cryptocurrency, 
+    &--blockchain,
+    &--metaverse,
+    &--nft {
+        border: 1px solid black;
+        border-bottom: none;
+        h3 {
+            line-height: 2em;
+            margin-left: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+footer {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+
+    .socials {
+
+        img {
+            height: 25px;
+            width: 25px;
+            opacity: 0.6;
+        }
+    }
+    ul {
+        gap: 10px;
+    }
+    .links {
+        display: flex;
+    }
+}
