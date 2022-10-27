@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.banner {
+  height: 100px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-navigation {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  gap: 30px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  height: 4em;
+}
+.page-navigation ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.page-navigation .search {
+  margin-right: 10px;
+}
+
+.latest-stories {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 90%;
+  height: 50vh;
+  gap: 5px;
+}
+.latest-stories .latest-stories-smalls {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 5px;
+}
+.latest-stories--small, .latest-stories--big {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.latest-stories--small .article-header, .latest-stories--big .article-header {
+  margin: auto;
+}
+.latest-stories--small .article-description, .latest-stories--big .article-description {
+  justify-self: flex-end;
+  margin: auto;
+  text-align: center;
+}
+.latest-stories--small .article-description {
+  font-size: 0.8em;
+}
+
+.trending-news {
+  width: 90%;
+  border: 1px solid black;
+}
+.trending-news .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  border-bottom: 1px solid black;
+}
+.trending-news .header ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.trending-news .header ul li {
+  padding: 1.5em 0;
+}
+.trending-news .header ul .selected {
+  border-bottom: 4px solid black;
+}
+.trending-news .trending-articles {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.trending-news .trending-articles--preview--smalls {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.trending-news .trending-articles--preview--smalls .selected {
+  border: 1px solid black;
+}
+.trending-news .trending-articles--preview--small {
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+.trending-news .trending-articles--preview--small img {
+  height: 70px;
+  width: 90px;
+  background-color: black;
+}
+.trending-news .trending-articles--preview--small h1 {
+  font-size: 1em;
+}
+.trending-news .trending-articles--preview--big {
+  margin: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.trending-news .trending-articles--preview--big img {
+  background: black;
+  height: 30vh;
+  width: 100%;
+}
+.trending-news .trending-articles--preview--big .read-more {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+}
+.trending-news .trending-articles--preview--big p {
+  line-height: 1.2em;
+}
+
+.recommended-articles {
+  width: 90%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.recommended-articles .container {
+  display: grid;
+  height: 50vh;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 5px;
+}
+.recommended-articles .container .article {
+  width: auto;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+}
+.recommended-articles .container .article h1 {
+  margin: 20px;
+}
+.recommended-articles--cryptocurrency, .recommended-articles--blockchain, .recommended-articles--metaverse, .recommended-articles--nft {
+  border: 1px solid black;
+  border-bottom: none;
+}
+.recommended-articles--cryptocurrency h3, .recommended-articles--blockchain h3, .recommended-articles--metaverse h3, .recommended-articles--nft h3 {
+  line-height: 2em;
+  margin-left: 20px;
+}
+
+footer {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+footer .socials img {
+  height: 25px;
+  width: 25px;
+  opacity: 0.6;
+}
+footer ul {
+  gap: 10px;
+}
+footer .links {
+  display: flex;
+}/*# sourceMappingURL=index.css.map */
